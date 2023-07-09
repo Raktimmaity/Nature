@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.logo{
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 1px;
+}
+ul{
+  list-style-type: none;
+}
+
+ul li{
+  display: inline-block;
+  padding: 20px;
+  transition: all .2s ease-in;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+li:hover{
+  background-color: #ecf003;
+}
+
+.cont{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  background-color: #e5ff00;
+}
+
+.left{
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.left > h1{
+  margin: 20px 60px;
+  padding: 20px;
+  font-size: 60px;
+}
+
+.left > p{
+  margin: 20px 60px;
+  padding: 20px;
+}
+
+.left > .land-btn{
+  margin: 20px 80px;
+  padding: 10px;
+  width: 160px;
+  background-color: #ecf003;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.left > .land-btn:hover{
+  background-color: #fff;
+  border: 2px solid #ecf003;
+}
+
+.right{
+  width: 50%;
+}
+
+img{
+  width: 600px;
+  height: 70vh;
+}
+
+
+@media screen and (max-width: 700px) {
+  .cont{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  .left{
+    width: 100%;
+  }
+}
